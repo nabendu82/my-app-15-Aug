@@ -7,6 +7,10 @@ class RefsDemo extends Component {
         this.commentRef = React.createRef()
     }
 
+    componentDidMount(){
+        this.userRef.current.focus()
+    }
+
     handleSubmit = e => {
         e.preventDefault()
         console.log(this.userRef.current.value);
